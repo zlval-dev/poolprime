@@ -23,3 +23,33 @@ header ul li{
     text-transform: uppercase;
     padding: 15px;
 }
+
+header ul li a:hover{
+    display: inline-block;
+    padding-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+header ul li a:hover::before{
+    transform: translateX(-50%);
+    border-radius: 100%;
+    position: absolute;
+    background: #fff;
+    bottom: 10px;
+    height: 8px;
+    content: '';
+    width: 8px;
+    left: 50%;
+}
+
+header ul .first{
+    margin-left: 6vw;
+    margin-top: 20px;
+}
+
+header ul li img{
+    position: absolute;
+    width: 5vw;
+    margin-top: -20px;
+}
