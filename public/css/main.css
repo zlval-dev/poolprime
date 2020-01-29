@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body{
+    background-color: #191919;
+}
+
+header ul li{
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 15px;
+}
