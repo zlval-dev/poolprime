@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="PoolPrime Website">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title>POOL PRIME | {{ 'translate.link1'|trans }}</title>
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    </head>
+
+    <body>
+
+        <header>
+            <ul>
+                <li class="logo"><a id="image"><img src="img/logo.png" alt="logo"></a></li>
+                <li class="menu first"><a href="portfolio/{{ language }}">{{ 'translate.link2'|trans }}</a></li>
+                <li class="menu"><a>{{ 'translate.link3'|trans }}</a></li>
+                <li class="menu"><a>{{ 'translate.link4'|trans }}</a></li>
+                <li class="menu"><a>{{ 'translate.link5'|trans }}</a></li>
+            </ul>
+        </header>
+
+        <div class="main-portfolio">
+            <ul>
+                <li class="left"><img src="img/arrow.png" alt="{{ 'translate.link6'|trans }}"></li>
+                <li class="center"><h2>Savoy Palace Hotel</h2><h3>Projeto e Instalacao de tubagem, equipamento das piscinas e massagem</h3></li>
+                <li class="right"><img src="img/arrow.png" alt="{{ 'translate.link7'|trans }}"></li>
+            </ul>
+        </div>
+
+        <div class="main-about-us">
+            <h2>{{ 'translate.link8'|trans }}</h2>
+            <p>{{ 'translate.link9'|trans }}</p>
+            <p>{{ 'translate.link10'|trans }}</p>
+            <p>{{ 'translate.link11'|trans }}</p>
+        </div>
+
+        <div class="main-services">
+            <div id="service-center">
+                <h2>{{ 'translate.link12'|trans }}</h2>
+                <p>{{ 'translate.link13'|trans }}</p>
+            </div>
+            <div class="services-subtopics">
+                <div class="subtopic">
+                    <div class="subtopic-text">
+                        <h2>{{ 'translate.link14'|trans }}</h2>
+                        <p>{{ 'translate.link15'|trans }}</p>
+                    </div>
+                    <button>{{ 'translate.link16'|trans }}</button>
+                </div>
+                <div class="subtopic">
+                    <div class="subtopic-text">
+                        <h2>{{ 'translate.link17'|trans }}</h2>
+                        <p>{{ 'translate.link18'|trans }}</p>
+                    </div>
+                    <button>{{ 'translate.link16'|trans }}</button>
+                </div>
+                <div class="subtopic">
+                    <div class="subtopic-text">
+                        <h2>{{ 'translate.link19'|trans }}</h2>
+                        <p>{{ 'translate.link20'|trans }}</p>
+                    </div>
+                    <button>{{ 'translate.link16'|trans }}</button>
+                </div>
+            </div>
+        </div>
+
+        {{ include('footer.html.twig') }}
+
+    </body>
+    <script type="application/javascript" src="js/jquery.js"></script>
+    <script type="application/javascript" src="js/main.js"></script>
+</html>

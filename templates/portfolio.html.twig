@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="PoolPrime Website">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title>POOL PRIME | {{ 'translate.link1'|trans }}</title>
+        <link rel="shortcut icon" href="../img/logo.png">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+    </head>
+
+    <body>
+
+        <header>
+            <ul>
+                <li class="logo"><a id="image" href="../{{ language }}"><img src="../img/logo.png" alt="logo"></a></li>
+                <li class="menu first"><a>{{ 'translate.link2'|trans }}</a></li>
+                <li class="menu"><a>{{ 'translate.link3'|trans }}</a></li>
+                <li class="menu"><a>{{ 'translate.link4'|trans }}</a></li>
+                <li class="menu"><a>{{ 'translate.link5'|trans }}</a></li>
+            </ul>
+        </header>
+
+        <div class="portfolio">
+            <h2>{{ 'translate.link2'|trans }}</h2>
+            <div class="image-card">
+                <div>
+                    <img src="../img/logo.png" alt="{{ 'translate.link2'|trans }}-img"></img>
+                    <h3>Título da Foto1 Teste</h3>
+                    <h4>Descrição da Foto1 Teste</h4>
+                </div>
+                <div>
+                    <img src="../img/footer.png" alt="{{ 'translate.link2'|trans }}-img"></img>
+                    <h3>Título da Foto2 Teste</h3>
+                    <h4>Descrição da Foto2 Teste</h4>
+                </div>
+                <div>
+                    <img src="../img/logo.png" alt="{{ 'translate.link2'|trans }}-img"></img>
+                    <h3>Título da Foto3 Teste</h3>
+                    <h4>Descrição da Foto3 Teste</h4>
+                </div>
+                <div>
+                    <img src="../img/logo.png" alt="{{ 'translate.link2'|trans }}-img"></img>
+                    <h3>Título da Foto4 Teste</h3>
+                    <h4>Descrição da Foto4 Teste</h4>
+                </div>
+                <div>
+                    <img src="../img/logo.png" alt="{{ 'translate.link2'|trans }}-img"></img>
+                    <h3>Título da Foto5 Teste</h3>
+                    <h4>Descrição da Foto5 Teste</h4>
+                </div>
+            </div>
+        </div>
+
+        {{ include('footer.html.twig') }}
+
+    </body>
+    <script type="application/javascript" src="../js/jquery.js"></script>
+    <script type="application/javascript" src="../js/main.js"></script>
+</html>
