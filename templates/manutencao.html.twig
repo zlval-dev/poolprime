@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    {{ include('head.html.twig') }}
+
+    <body>
+
+        {{ include('menu.html.twig') }}
+
+        <div class="services">
+            <h2>{{ 'translate.link12'|trans }}</h2>
+            <h3>{{ 'translate.link13'|trans }}</h3>
+            <h2>{{ 'translate.link19'|trans }}</h2>
+            <h3>{{ 'translate.link20'|trans }}</h3>
+            <div class="service-card">
+                <div>
+                    <img src="/img/logo.png" alt="{{ 'translate.link30'|trans }}1">
+                    <h2>{{ 'translate.link31'|trans }}</h2>
+                    <h3>{{ 'translate.link15'|trans }}</h3>
+                </div>
+                <div>
+                    <img src="/img/logo.png" alt="{{ 'translate.link30'|trans }}2">
+                    <h2>{{ 'translate.link32'|trans }}</h2>
+                    <h3>{{ 'translate.link33'|trans }}</h3>
+                </div>
+                <div>
+                    <img src="/img/logo.png" alt="{{ 'translate.link30'|trans }}3">
+                    <h2>{{ 'translate.link34'|trans }}</h2>
+                    <h3>{{ 'translate.link35'|trans }}</h3>
+                </div>
+            </div>
+        </div>
+
+        {{ include('footer.html.twig') }}
+    </body>
+    {{ include('scripts.html.twig') }}
+</html>

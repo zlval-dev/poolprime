@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {{ include('head.html.twig') }}
+
+    <body>
+
+        {{ include('menu.html.twig') }}
+
+        <div class="about-us">            
+            <h2>{{ 'translate.link24'|trans }}</h2>
+            <img src="/img/savoy.jpg" alt="{{ 'translate.link29'|trans }}">
+            <h3>{{ 'translate.link25'|trans }}</h3>
+            <h3>{{ 'translate.link26'|trans }}</h3>
+            <h3>{{ 'translate.link27'|trans }}</h3>
+            <h3>{{ 'translate.link28'|trans }}</h3>
+        </div>
+
+        {{ include('footer.html.twig') }}
+
+    </body>
+    {{ include('scripts.html.twig') }}
+</html>

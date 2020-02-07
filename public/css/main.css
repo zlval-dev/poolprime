@@ -21,12 +21,16 @@
     user-select: none;
 }
 
+#visible{
+    display: block;
+}
+
 body{
     background-color: #191919;
 }
 
 header{
-    padding-bottom: 15px;
+    padding-bottom: 1vw;
 }
 
 header ul li{
@@ -35,7 +39,7 @@ header ul li{
     font-size: 1.5vw;
     font-family: segoe;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 1vw;
 }
 
 header ul li a{
@@ -78,6 +82,41 @@ header ul li img{
     position: absolute;
     width: 5vw;
     margin-top: -0.7vw;
+}
+
+header ul .language{
+    position: absolute;
+    right: 0;
+    transform: translateX(-50%);
+}
+
+header ul .language img{
+    width: 3vw;
+    border-radius: 0.5vw;
+    background-color: #707070;
+}
+
+header ul .language img:hover{
+    cursor: pointer;
+}
+
+header ul .language li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+header ul .language li img{
+    padding: 0.5vw;
+}
+
+header ul .language .second-language{
+    padding-top: 2vw;
+    display: none;
+}
+
+header ul .language .first-language img{
+    z-index: 50;
 }
 
 .portfolio{
@@ -260,7 +299,7 @@ header ul li img{
     margin-bottom: 15px;
 }
 
-.main-services .services-subtopics .subtopic button{
+.main-services .services-subtopics .subtopic a{
     display: flex;
     align-self: flex-end;
     position: absolute;
@@ -272,6 +311,8 @@ header ul li img{
     font-family: segoe;
     border-radius: 10px;
     outline: none;
+    text-decoration: none;
+    border: 2px #fff solid;
 }
 
 .main-services .services-subtopics .subtopic button:hover{
@@ -349,13 +390,14 @@ footer{
     color: #fff;
     font-family: segoe;
     text-align: center;
+    background-position-y: 125px;
     background-image: url(/img/footer.png);
     background-repeat: no-repeat;
-    background-size: 60vh;
+    background-size: 65vh;
 }
 
 footer .contact{
-    margin-top: 100px;
+    padding-top: 100px;
     margin-bottom: 150px;
 }
 
@@ -418,4 +460,83 @@ footer .info .authors p{
 
 footer .info .authors{
     padding-bottom: 100px;
+}
+
+.about-us{
+    text-align: center;
+    font-family: segoe-italic;
+    color: #fff;
+}
+
+.about-us h2{
+    color: #1370a5;
+    text-transform: capitalize;
+    font-size: 4vw;
+    margin-bottom: 75px;
+    margin-top: 60px;
+}
+
+.about-us h3{
+    font-size: 1.5vw;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 75px;
+}
+
+.about-us img{
+    width: 80vw;
+    height: 50vh;
+}
+
+.services{
+    text-align: center;
+    font-family: segoe-italic;
+    color: #fff;
+}
+
+.services h2{
+    color: #1370a5;
+    text-transform: capitalize;
+    font-size: 3vw;
+    margin-bottom: 25px;
+    margin-top: 60px;
+}
+
+.services h3{
+    font-size: 1.5vw;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 150px;
+}
+
+.services .service-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services .service-card div{
+    flex: 1 0 200px;
+    margin: 0 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.services .service-card div img{
+    width: 100%;
+    height: 350px;
+    max-width: 400px;
+}
+
+.services .service-card div h2{
+    text-transform: uppercase;
+    font-size: 1vw;
+    margin: 50px 0 25px 0;
+}
+
+.services .service-card div h3{
+    font-size: 0.8vw;
+    width: 75%;
+    margin-bottom: 0px;
 }
