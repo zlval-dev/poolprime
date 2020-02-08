@@ -237,20 +237,21 @@ header ul .language .first-language img{
     margin: 5vw 0;
     color: #fff;
     font-family: segoe-italic;
-    width: 70%;
+    width: 55%;
     margin-left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
 
 .main-about-us h2{
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin-bottom: 2vw;
 }
 
 .main-about-us p{
-    font-size: 1vw;
+    font-size: 1.4vw;
     margin-top: 0.5vw;
+    white-space: pre-wrap;
 }
 
 .main-services{
@@ -263,11 +264,11 @@ header ul .language .first-language img{
 .main-services #service-center h2{
     padding-top: 4vw;
     color: #145a82;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .main-services #service-center p{
-    font-size: 2vw;
+    font-size: 1.2vw;
     width: 50%;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -277,7 +278,6 @@ header ul .language .first-language img{
 .main-services .services-subtopics{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 4vw;
 }
 
 .main-services .services-subtopics .subtopic{
@@ -291,13 +291,14 @@ header ul .language .first-language img{
 .main-services .services-subtopics .subtopic .subtopic-text h2{
     color: #145a82;
     font-family: segoe;
-    font-size: 3vw;
+    font-size: 2vw;
     margin-bottom: 1.5vw;
 }
 
 .main-services .services-subtopics .subtopic .subtopic-text p{
-    font-size: 2vw;
-    margin-bottom: 4vw;
+    font-size: 1.2vw;
+    margin-bottom: 5vw;
+    max-width: 30vw;
 }
 
 .main-services .services-subtopics .subtopic a{
@@ -305,7 +306,7 @@ header ul .language .first-language img{
     align-self: flex-end;
     position: absolute;
     text-transform: uppercase;
-    padding: 0.5vw 2.5vw;
+    padding: 0.5vw 5vw;
     color: #fff;
     background-color: #2aaee2;
     font-family: segoe;
@@ -313,7 +314,7 @@ header ul .language .first-language img{
     outline: none;
     text-decoration: none;
     border: 0.2vw #fff solid;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .main-services .services-subtopics .subtopic button:hover{
@@ -394,7 +395,7 @@ footer{
     background-position-y: 5vw;
     background-image: url(/img/footer.png);
     background-repeat: no-repeat;
-    background-size: 30vw 75vw;
+    background-size: 30vw 65vw;
 }
 
 footer .contact{
@@ -409,14 +410,14 @@ footer .contact p{
 
 footer .contact a{
     text-transform: uppercase;
-    padding: 0.5vw 2vw;
+    padding: 0.5vw 3vw;
     background-color: #2aaee2;
     border-radius: 10px;
     border: 0.2vw #fff solid;
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 footer .info h2{
@@ -446,13 +447,28 @@ footer .info .other-contact div .one img{
 
 footer .info .other-contact div .one{
     display: inline-block;
-    margin: 1vw 1.5vw;
+    margin: 1vw 2vw;
     font-family: segoe;
     font-size: 1.5vw;
+    text-align: left;
+}
+
+footer .info .other-contact .align{
+    text-align: left;
+    margin-left: 50%;
+    transform: translateX(-35%);
+}
+
+footer .info .other-contact .align #first-align{
+    margin-left: -0.05vw;
+}
+
+footer .info .other-contact .align #last-align{
+    margin-left: 3vw;
 }
 
 footer .info .other-contact div .one a{
-    margin-left: 0.8vw;
+    margin-left: 0.5vw;
 }
 
 footer .info .authors p{
