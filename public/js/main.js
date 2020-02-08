@@ -35,9 +35,9 @@ $('.first-language img').click(() => {
 
 $('.second-language img').click(() => {
     if(language == 'pt')
-        window.location = '/en'
+        window.location = 'en'
     else
-        window.location = '/pt'
+        window.location = 'pt'
 })
 
 $(this).click((e) => {
