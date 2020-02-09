@@ -1,5 +1,7 @@
 var language = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1]
 var clicked = false
+var resizeBigger = false
+var resizeSmaller = false
 
 setInterval(()=>{
     clicked = false
@@ -46,3 +48,53 @@ $(this).click((e) => {
         clicked = true
     }
 })
+
+$('header .burguer').click(() => {
+    $('header ul .menu').css({
+        visibility: 'visible',
+        opacity: 1
+    })
+    $('header .burguer').css('display', 'none')
+    $('#remove-menu').css({
+        visibility: 'visible',
+        opacity: 1
+    })
+    $('header .menu-background').css({
+        visibility: 'visible',
+        opacity: 1
+    })
+})
+
+$('#remove-menu').click(() => {
+    resizeBigger = true
+    $('header ul .menu').css({
+        visibility: 'hidden',
+        opacity: 0
+    })
+    $('#remove-menu').css({
+        visibility: 'hidden',
+        opacity: 0
+    })
+    $('header .burguer').css('display', 'block')
+    $('header .menu-background').css({
+        visibility: 'hidden',
+        opacity: 0
+    })
+})
+
+window.onresize = () => {
+    if(window.innerWidth >= 600 && resizeBigger){
+        $('header ul .menu').css({
+            visibility: 'visible',
+            opacity: 1
+        })
+        resizeBigger = false
+        resizeSmaller = true
+    }else if(window.innerWidth < 600 && resizeSmaller){
+        $('header ul .menu').css({
+            visibility: 'hidden',
+            opacity: 0
+        })
+        resizeSmaller = false
+    }
+}
